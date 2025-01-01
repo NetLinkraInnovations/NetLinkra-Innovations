@@ -11,18 +11,16 @@
 <body>
     <!-- Header Section -->
     <header id="header">
-        <nav>
-            <div id="logo">
-                <img src="Logo.png" alt="NetLinkra Innovations Logo">
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="Services.html" class="active">Our Services</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+         <div class="dropdown">
+    <button>Menu</button>
+    <div class="dropdown-content">
+		<a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact.html">Contact Us</a>
+    </div>
+</div>
         <div id="hero">
             <h1>Our Services</h1>
             <p>Innovative Solutions to Propel Your Business Forward</p>
@@ -33,28 +31,28 @@
     <section id="services">
         <h2>What We Offer</h2>
         <p>Explore our range of services designed to empower your business and connect you to the future.</p>
-        <div class="service-list">
+        <div class="service-list" id="web-development">
             <div class="service-item">
                 <h3>Web Development</h3>
                 <p>We craft stunning, responsive websites to engage your audience and leave a lasting impression.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" id="app-development">
                 <h3>App Development</h3>
                 <p>From mobile to web applications, we create customized solutions that meet your needs.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" id="networking">
                 <h3>Networking Solutions</h3>
                 <p>Secure, reliable networking systems designed to keep your business connected globally.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" id="ui-ux">
                 <h3>UI/UX Design</h3>
                 <p>Visually stunning and user-friendly designs that ensure a seamless experience for your audience.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" id="consultation">
                 <h3>IT Consultation</h3>
                 <p>Expert advice and strategies tailored to optimize your IT infrastructure and processes.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" id="cloud">
                 <h3>Cloud Solutions</h3>
                 <p>Innovative cloud-based services for enhanced scalability, flexibility, and efficiency.</p>
             </div>
@@ -64,7 +62,7 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 NetLinkra Innovations. All Rights Reserved.</p>
-		<div class="social-media">
+        <div class="social-media">
             <a href="https://www.facebook.com/profile.php?id=61570752791722" target="_blank">
                 <img src="Facebook.png" alt="Facebook">
             </a>

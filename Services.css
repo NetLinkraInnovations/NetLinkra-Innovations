@@ -65,36 +65,79 @@ header {
     animation: fadeInUp 2s ease forwards 1s;
 }
 
-/* Navigation Bar */
-nav {
+/* Dropdown Menu */
+.dropdown {
     position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px 30px;
+    top: 20px;
+    right: 30px;
+    z-index: 150;
+    display: inline-block;
+    text-align: left;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #b0bec5; /* Light Blue-Grey */
-    text-decoration: none;
+.dropdown button {
+    background: #4da8da; /* Soft Cyan Background */
+    color: #00172b; /* Dark Background Color for Contrast */
+    padding: 10px 20px;
     font-size: 1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: #4da8da;
-    transform: scale(1.1);
+.dropdown button:hover {
+    background: #002b4e; /* Hover Background */
+    color: #4da8da; /* Hover Text Color */
+    transform: scale(1.1); /* Subtle Zoom Effect */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #00172b; /* Dropdown Background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle Shadow */
+    border: 2px solid #4da8da; /* Border Matching Theme */
+    border-radius: 5px;
+    padding: 10px;
+    right: 0;
+    min-width: 200px;
+    z-index: 200;
+}
+
+.dropdown-content a {
+    color: #b0bec5; /* Text Color */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: #4da8da; /* Hover Background */
+    color: #00172b; /* Hover Text Color */
+    transform: scale(1.05); /* Slight Zoom on Hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show on Hover */
+    animation: fadeInDropdown 0.3s ease forwards;
+}
+
+/* Animation for Dropdown Appearance */
+@keyframes fadeInDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Sections Styling */
